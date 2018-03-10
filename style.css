@@ -1,0 +1,19 @@
+th {
+  background-color: grey;
+}
+
+#organic {
+  background-color: green;
+}
+#inorganic {
+  background-color: lightgrey;
+}
+#composite {
+  background-color: yellow;
+}
+#red {
+  background-color: red;
+}
+#green {
+  background-color: green;
+}
