@@ -16,32 +16,41 @@
       <div class="col-sm"></div>
 
       <div class="col-sm">
-        <p>
-          This page is a simple evaluation of your <a href="https://en.wikipedia.org/wiki/Relative_humidity">relative humidity</a> in comparison with the safe ranges for a variety of common materials.
-        </p>
-
-
-        <form id="form">
-          Relative Humidity:
-          <div class="form-row">
-            <div class="col">
-
-              <input type="text" class="form-control" name="Relative Humidity" id="rh">
-            </div>
-            <div class="col">
-              %
-            </div>
-            <div class="col">
-              <input type="submit" value="Submit" class="btn btn-outline-info btn-sm">
-            </div>
+        <div class="card" style="margin-top: 4rem">
+          <div class="card-header"><strong>Relative Humidity</strong>
           </div>
-        </form>
+          <div class="card-body">
+            <p>
+              This page is a simple evaluation of your <a href="https://en.wikipedia.org/wiki/Relative_humidity">relative humidity</a> in comparison with the safe ranges for a variety of common materials.
+            </p>
 
-        <p id="yourRH"></p>
 
-        <table id="table" class="table table-sm">
+            <form id="form">
+              Relative Humidity:
+              <div class="row" style="margin-top: 1rem">
+                <div class="col">
+                  <div class="input-group mb-3">
 
-        </table>
+                    <input type="text" class="form-control" name="Relative Humidity" id="rh">
+                    <div class="input-group-append">
+                      <span class="input-group-text">%
+                    </span>
+                    </div>
+                  </div>
+                </div>
+                <div class="col">
+                  <input type="submit" value="Submit" class="btn btn-outline-info btn-sm float-right">
+                </div>
+              </div>
+            </form>
+
+            <p id="yourRH"></p>
+
+            <table id="table" class="table table-sm">
+
+            </table>
+          </div>
+        </div>
       </div>
 
       <div class="col-sm"></div>
