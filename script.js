@@ -16,23 +16,18 @@ let createTable = function(rh) {
   let tableRows = '';
   for (let i = 0; i < materials.length; i = i + 1) {
     let row = materials[i];
-
+    let colorRH = getColor(rh, row.minRH, row.maxRH);
     let rowHTML = `
-   <tr class=\"` + getColor(rh, row.minRH, row.maxRH) + `\">
+   <tr>
    <td>` + row.name + `</td>
    <td>` + row.type + `</td>
-   <td>` + row.minRH + `%</td>
-   <td>` + row.maxRH + `%</td>
+   <td class=\"` + colorRH + `\">` + row.minRH + `%</td>
+   <td class=\"` + colorRH + `\">` + row.maxRH + `%</td>
    </tr>`;
     tableRows = tableRows + rowHTML;
   }
   $("#yourRH").html("Your reported relative humidity is " + rh + "%");
   $("#table").html(header + tableRows);
-};
-
-
-let zxc = function(abc) {
-  $("#table").append("<tr><td>" + abc + "</td></tr>");
 };
 
 $("#form").submit(function(e) {
